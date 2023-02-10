@@ -7,16 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-// const ingredientList = document.querySelector("#ingredients");
-
-// const addItems = ingredients
-//   .map((ingredients) => `<li class="item">${ingredients}</li>`)
-//   .join(" ");
-
-//   console.log(addItems);
-
-//   ingredientList.innerHTML = addItems;
-//   console.log(ingredientList);
+// using document.createElement
 
 const ingredientList = [];
 
@@ -28,7 +19,19 @@ for (const ingredient of ingredients) {
 }
 
 const ulList = document.querySelector("#ingredients");
-
 ulList.append(...ingredientList);
-console.log(ulList);
+// console.log(ulList);
 
+
+// using innerHTML
+
+// const ingredientList = document.querySelector("#ingredients");
+
+// const addItems = ingredients
+//   .map((ingredients) => `<li class="item">${ingredients}</li>`)
+//   .join(" ");
+
+//   console.log(addItems);
+
+//   ingredientList.innerHTML = addItems;
+//   console.log(ingredientList);
