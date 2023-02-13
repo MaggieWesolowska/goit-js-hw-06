@@ -2,14 +2,17 @@ let counterValue = 0;
 
 const buttonDown = document.querySelector('[data-action="decrement"]');
 const buttonUp = document.querySelector('[data-action="increment"]');
-const btn = document.querySelector('button');
+
+let display = document.getElementById('value');
 
 const buttonClickedUp = () => {
-    console.log('btn clicked');
+    counterValue++
+    display.textContent = counterValue;
 };
 
 const buttonClickedDown = () => {
-    console.log("click");
+    counterValue--
+    display.textContent = counterValue;
 };
 
 buttonDown.addEventListener('click', buttonClickedDown);
