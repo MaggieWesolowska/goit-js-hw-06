@@ -1,16 +1,16 @@
 const textInput = document.querySelector('input');
-const inputLength = document.querySelector('[data-length="6"]');
+const inputLength = Number(textInput.dataset.length); // pobiera wartosc atrybutu
+// or:
+// const inputLength = Number(textInput.getAttribute('data-length')); pobiera wartosc atrybutu
 
-textInput.addEventListener('focus', () => {
-    textInput.value = inputLength.length;
-    textInput.style.border = '3px solid #bdbdbd;'
-});
+// const inputLength = document.querySelector('[data-length="6"]'); wskazuje na caly atrybut lacznie z jego wartoscia
 
-textInput.addEventListener('blur', ()=> {
-
-    if (textInput === inputLength.length) {
-        textInput.style.borderColor = #4caf50;
+textInput.addEventListener('blur', () => {
+    if (textInput.value.length === inputLength) {
+        textInput.classList.add('valid')
+        textInput.classList.remove('invalid')
     } else {
-        textInput.style.borderColor = #f44336;
+        textInput.classList.add('invalid')
+        textInput.classList.remove('valid')
     }
 });
