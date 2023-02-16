@@ -11,7 +11,8 @@ form.addEventListener('submit', (event) => {
         email: email.value,
         password: password.value,
      }
-
+     //without object:
+     // if (email.value === '' || password.value '')
      if (data.email === '' || data.password === '') {
         return alert('All fields must be filled in!');
      }
