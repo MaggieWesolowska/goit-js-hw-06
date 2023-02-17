@@ -6,20 +6,20 @@ const createBtn = document.querySelector('[data-create]');
 const destroyBtn = document.querySelector('[data-destroy]');
 const divBoxes = document.querySelector('#boxes');
 
-let amount = 0;
-
 function createBoxes(amount) {
-  for (i = 0; i < inputSource; i++) {
+  let boxCount = 0;
+  for (i = 0; i < amount; i++) {
+    const randomColor = getRandomHexColor();
     const newBox = `<div></div>`;
-    divBoxes.insertAdjacentHTML(afterbegin, newBox)
-    amount += newBox;
+    newBox.style.backgroundColor = randomColor;
+    newBox.style.fontSize = 30 + 10*i + 'px';
+    divBoxes.insertAdjacentHTML(afterbegin, newBox);
+    boxCount += addBox;
   }
-}
+};
 
 createBtn.addEventListener('click', () => {
-  const randomHexColor = getRandomHexColor();
   const addBox = createBoxes();
-  addBox.style.backgroundColor = randomHexColor;
-  addBox.style.fontSize = 30 + 10*i + 'px';
-})
+  addBox = boxCount;
+});
 
