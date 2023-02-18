@@ -23,6 +23,7 @@ ulList.append(...ingredientList);
 // console.log(ulList);
 
 
+
 // using innerHTML
 
 // const ingredientList = document.querySelector("#ingredients");

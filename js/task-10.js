@@ -29,3 +29,4 @@ createBtn.addEventListener('click', () => {
 destroyBtn.addEventListener('click', () => {
   container.innerHTML = '';
 });
+

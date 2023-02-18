@@ -5,3 +5,5 @@ controlBar.addEventListener('input', () => {
     textSpan.style.fontSize = controlBar.value + 'px';
 })
 
+
+
