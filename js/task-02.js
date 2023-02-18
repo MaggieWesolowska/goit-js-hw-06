@@ -22,16 +22,11 @@ const ulList = document.querySelector("#ingredients");
 ulList.append(...ingredientList);
 // console.log(ulList);
 
-
-
 // using innerHTML
-
 // const ingredientList = document.querySelector("#ingredients");
-
 // const addItems = ingredients
 //   .map((ingredients) => `<li class="item">${ingredients}</li>`)
 //   .join(" ");
-
 //   console.log(addItems);
 
 //   ingredientList.innerHTML = addItems;

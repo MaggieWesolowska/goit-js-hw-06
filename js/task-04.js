@@ -16,7 +16,6 @@ const buttonClickedDown = () => {
 };
 
 counterDown.addEventListener('click', buttonClickedDown);
-
 counterUp.addEventListener('click', buttonClickedUp);
 
 

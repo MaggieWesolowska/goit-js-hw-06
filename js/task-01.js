@@ -9,4 +9,3 @@ liItems.forEach(liItem => {
     console.log("Elements: " + element.length);
 }
 );
-

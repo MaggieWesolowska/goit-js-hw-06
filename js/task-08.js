@@ -22,5 +22,3 @@ form.addEventListener('submit', (event) => {
 
 
 
-
-

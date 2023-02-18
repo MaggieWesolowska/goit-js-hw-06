@@ -17,7 +17,6 @@ function createBoxes(amount) {
     container.append(newBox);
   }
 };
-
 //using innerHTML:
 // divBox.innerHTML += `<div style="background-color: ${getRandomHexColor() or: randomColor}; width: ${newBoxSize}; height: ${newBoxSize}"></div>`;
 
@@ -29,4 +28,3 @@ createBtn.addEventListener('click', () => {
 destroyBtn.addEventListener('click', () => {
   container.innerHTML = '';
 });
-

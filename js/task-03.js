@@ -23,6 +23,3 @@ console.log(markup);
 
 gallery.insertAdjacentHTML("afterbegin", markup);
 
-
-
-
