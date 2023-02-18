@@ -22,7 +22,7 @@ function createBoxes(amount) {
 // divBox.innerHTML += `<div style="background-color: ${getRandomHexColor() or: randomColor}; width: ${newBoxSize}; height: ${newBoxSize}"></div>`;
 
 createBtn.addEventListener('click', () => {
-  let counter = Number(input.value);
+  let counter = Number(input.value); // or: +(input.value);
   createBoxes(counter);
 });
 
