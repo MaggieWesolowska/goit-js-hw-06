@@ -17,7 +17,7 @@ function createBoxes(amount) {
     container.append(newBox);
   }
 };
-//using innerHTML:
+//using innerHTML: -->
 // divBox.innerHTML += `<div style="background-color: ${getRandomHexColor() or: randomColor}; width: ${newBoxSize}; height: ${newBoxSize}"></div>`;
 
 createBtn.addEventListener('click', () => {
@@ -28,3 +28,17 @@ createBtn.addEventListener('click', () => {
 destroyBtn.addEventListener('click', () => {
   container.innerHTML = '';
 });
+
+// using declarative approach: -->
+// const qs = (s) => document.querySelector(s);
+// const boxes = qs('#boxes');
+// const createBtn = qs('button[data-create');
+// const destroyBtn = document.querySelector('button[data-destroy]');
+// const input = qs('#controls input');
+
+// const createBoxes = amount => {
+//   let boxesArray = [];
+//   for (let i = 0; i <= amount; i++) {
+//     /* rest as above */
+//   }
+// }
